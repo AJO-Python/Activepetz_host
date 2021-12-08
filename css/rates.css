@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+  background-color: #fff;
+  border: solid 3px #588157;
+}
+table th {
+  font-weight: bold;
+}
+table td {
+  font-weight: normal;
+}
+table td, table th {
+  padding: 0.5em;
+  border-bottom: solid 1px #588157;
+}
+
+.title-row th {
+  background-color: #e1eae1;
+}
+.table-title {
+  width: 30%;
+}
+.table-cost {
+  width: 17.5%;
+}
+
+#dog_walking {
+  display: table;
+}
+
+/* Large Resizing */
+@media (max-width: 992px) {
+
+}
+
+/* Small */
+@media (max-width: 767px){
+}
+
+/* Phone */
+@media (max-width: 576px){
+
+}
+
+/* Phone Resize For Dog Walking */
+@media (max-width: 576px){
+  #dog_walking {
+    display: none;
+  }
+}

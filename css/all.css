@@ -1,0 +1,294 @@
+/* Global */
+ html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+body {
+  font-family: 'Trebuchet MS';
+  font-size: 20px;
+  color: #393e46;
+}
+h1 {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: #393e46;
+}
+hr {
+  width: 100%;
+  margin-bottom: 2em;
+  background-color: #393e46;
+}
+a {
+  color: #5985a6;
+  transition: 0.3s;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #9ab5c9 !important;
+}
+
+
+
+/* Navbar */
+.navbar-brand img {
+  width: 150px;
+  height: 123.7px;
+}
+
+.navbar-collapse {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-item {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.nav-link {
+  letter-spacing: 0.1em;
+  color: #000 !important;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #588157 !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #393e46;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #f8f8ff;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+.footer a {
+  color: #f8f8ff;
+  display: inline-block;
+  margin-bottom: 0.1em;
+}
+.footer hr {
+  background-color: #f8f8ff;
+  margin-bottom: 0.75em;
+  /*margin-left: 0;*/
+  margin-top: 0.1em;
+  text-align: left;
+}
+.legal {
+  margin-top: 2em;
+  color: #808080;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* General */
+.centre {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+.space-bottom--none {
+  margin-bottom: 0em;
+}
+.space-bottom {
+  margin-bottom: 2em;
+}
+.space-bottom--l {
+  margin-bottom: 4em;
+}
+.space-bottom--s {
+  margin-bottom: 1em;
+}
+.space-bottom--xs {
+  margin-bottom: 0.5em;
+}
+
+.inline-icon {
+  margin-left: 0.25em;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 2px;
+}
+.title-with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-with-icon .inline-icon {
+  margin-left: 0em;
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  top: 0px;
+  bottom: 20px;
+}
+
+
+.header-banner {
+  position: relative;
+}
+.header-banner img {
+  height: 225px;
+  object-fit: cover;
+  width: 100%;
+  animation: banner-blur 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.header-banner h1 {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+}
+.green {
+  color: #588157 !important;
+}
+.white {
+  color: #fff !important;
+}
+.red {
+  color: #cc0000;
+}
+.green-stripe {
+  background-color: #b5c99a;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.hr--green {
+  background-color: #588157;
+}
+.hr-icon {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.hr--short {
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+  height: 1.5px;
+  margin-bottom: 5px;
+}
+.img-with-hr {
+  width: 6%;
+}
+
+.button {
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;;
+  padding: 0.3em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  transition: 0.3s;
+  background-color: #588157;
+  color: #fff;
+  border-color: #588157;
+  letter-spacing: 0.08em;
+}
+.button:hover {
+  background-color: #fff;
+  color: #588157;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Small */
+@media (max-width: 992px){
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 22px;
+  }
+  .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nav-link {
+    padding-left: 1em !important;
+    transition: 0.5s;
+  }
+  .nav-link:hover {
+    background-color: #588157;
+    color: #fff !important;
+  }
+  .space-bottom--l {
+    margin-bottom: 3em;
+  }
+}
+/* Small */
+@media (max-width: 768px){
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .space-bottom--l {
+    margin-bottom: 2em;
+  }
+  .space-bottom--resize {
+    margin-bottom: 1em !important;
+  }
+  .space-bottom--resize--lg {
+    margin-bottom: 2em !important;
+  }
+  .header-banner h1 {
+    font-size: 42px;
+  }
+}
+/* Phone */
+@media (max-width: 576px){
+  .justify {
+    text-align:
+  }
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .footer {
+    font-size: 16px !important;
+  }
+  .img-with-hr {
+    width: 12%;
+  }
+  .hr--short {
+    width: 38%;
+    height: 1px;
+  }
+  .header-banner {
+    display: none;
+  }
+  .header-title {
+    display: block;
+  }
+}
+
+@keyframes banner-blur {
+  0% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(2.5px);
+    -moz-filter: blur(2.5px);
+    -o-filter: blur(2.5px);
+    -ms-filter: blur(2.5px);
+  }
+}

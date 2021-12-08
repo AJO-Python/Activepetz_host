@@ -1,0 +1,96 @@
+.carousel .img-carousel .carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  animation: blur 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.carousel-text {
+  color: #fff;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 30%;
+}
+.carousel-text h1 {
+  color: #fff;
+}
+
+.img-sec img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#reviewCarousel {
+  position: relative;
+}
+#reviewCarousel .carousel-indicators {
+  position: absolute;
+  bottom: -2em;
+}
+#reviewCarousel .carousel-control-prev {
+  position: absolute;
+  left: -4em;
+}
+#reviewCarousel .carousel-control-next {
+  position: absolute;
+  right: -4em;
+}
+#reviewCarousel .carousel-inner p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Large Resizing */
+@media (max-width: 992px) {
+  .img-carousel .carousel img {
+    height: 500px;
+  }
+  .carousel-text {
+    top: 20%;
+  }
+  #cindy-img {
+    display: none;
+  }
+}
+
+/* Small */
+@media (max-width: 767px){
+  .space-bottom--l {
+    margin-bottom: 2em;
+  }
+  .carousel {
+    display: none;
+  }
+  .img-sec {
+    display: none;
+  }
+  .small-review {
+    display: block;
+  }
+}
+
+/* Phone */
+@media (max-width: 576px){
+  .img-sec {
+    display: block !important;
+  }
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+  }
+}

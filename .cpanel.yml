@@ -2,4 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/activepe/public_html/
-    - /bin/cp -R /home/activepe/repositories/Activepetz/ $DEPLOYPATH
+    - export REPO=/home/activepe/repositories/Activepetz/
+    - /bin/cp -R "$REPO/js" $DEPLOYPATH
+    - /bin/cp -R "$REPO/css" $DEPLOYPATH
+    - /bin/cp -R "$REPO/media" $DEPLOYPATH
+    - /bin/cp "$REPO/*.html" $DEPLOYPATH

@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/activepe/public_html/
-    - /bin/cp -R /home/activepe/repositories/Activepetz $DEPLOYPATH
+    - /bin/cp -R /home/activepe/repositories/Activepetz/* $DEPLOYPATH
